@@ -10,6 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { YearsPage } from '../pages/years/years';
 import { SubjectsPage } from '../pages/subjects/subjects';
 import { TablePage } from '../pages/table/table';
+import { LoginPage } from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,7 +24,8 @@ import { SubjectsService } from '../services/subjects/subjects';
     TabsPage,
     YearsPage,
     SubjectsPage,
-    TablePage
+    TablePage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { SubjectsService } from '../services/subjects/subjects';
     TabsPage,
     YearsPage,
     SubjectsPage,
-    TablePage
+    TablePage,
+    LoginPage
   ],
   providers: [
     StatusBar,
