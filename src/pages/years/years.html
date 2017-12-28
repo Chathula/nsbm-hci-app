@@ -1,16 +1,16 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Years</ion-title>
+  <ion-navbar color="app-blue">
+    <ion-title color="light">Years</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Select Year</h2>
+  <p class="select-text">Select Year</p>
 
   <ion-list inset>
     <button ion-item *ngFor="let year of years" (click)="yearSelected(year)">
       {{ year }}
-    </button> 
+    </button>
   </ion-list>
 
 </ion-content>

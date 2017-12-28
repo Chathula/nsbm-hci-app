@@ -4,9 +4,16 @@ page-home {
         background: rgb(0, 155, 134);
     }
 
-    h2 {
-        text-align: center;
+    .select-text {
+        font-weight: bold;
         font-size: 18px;
+        margin-left: 16px;
     }
+
+    .item-md {
+      padding-left: 0;
+    }
+
+
 }
 

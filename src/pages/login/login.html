@@ -1,25 +1,27 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Login</ion-title>
-  </ion-navbar>
+
 </ion-header>
 
 <ion-content padding>
 
   <ion-list class="vertical-align-content">
-      
+
     <ion-item>
-      <ion-label fixed>Username</ion-label>
-      <ion-input type="text" value="" ></ion-input>
+      <ion-img class="logo" style="width: 200px; height: 70px;" src="../../assets/imgs/logo.png"></ion-img>
     </ion-item>
-  
+
     <ion-item>
-      <ion-label fixed>Password</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input class="login-input" placeholder="Username" type="text" value="" ></ion-input>
     </ion-item>
-  
-    <button ion-button block color="dark" class="btn" (click)="login()">Login</button>
-  
+
+    <ion-item>
+      <ion-input class="login-input" placeholder="Password" type="password"></ion-input>
+    </ion-item>
+
+    <button ion-button block color="app-blue" class="btn" (click)="login()">Login</button>
+
+    <a href="#" class="forgot-password">Forgot password</a>
+
   </ion-list>
 
 </ion-content>
