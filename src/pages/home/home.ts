@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { YearsPage } from '../years/years';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +8,18 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  public items: any = [
+    'SCHOOL OF COMPUTING',
+    'SCHOOL OF BUSINESS',
+    'SCHOOL OF ENGINEERING'
+  ];
 
+  constructor(public navCtrl: NavController) {
+    
+  }
+
+  itemSelected(item) {
+    this.navCtrl.push(YearsPage);
   }
 
 }

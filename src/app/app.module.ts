@@ -1,39 +1,49 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+import { ListPage } from '../pages/list/list';
 import { TabsPage } from '../pages/tabs/tabs';
+import { YearsPage } from '../pages/years/years';
+import { SubjectsPage } from '../pages/subjects/subjects';
+import { TablePage } from '../pages/table/table';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SubjectsService } from '../services/subjects/subjects';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    ListPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    YearsPage,
+    SubjectsPage,
+    TablePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    ListPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    YearsPage,
+    SubjectsPage,
+    TablePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    SubjectsService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

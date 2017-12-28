@@ -1,0 +1,30 @@
+page-table {
+    .header {
+        font-weight: bold;
+        border-bottom: 1px solid #333;
+        padding-bottom: 5px;
+    }
+
+    .header ion-col {
+        border-right: 1px solid #333;
+        padding-left: 20px;
+    }
+
+    .header ion-col:last-child {
+        border-right: none;
+    }
+
+    .other {
+        border-bottom: 1px solid #CCC;
+        padding-bottom: 5px;
+    }
+
+    .other:last-child {
+        border-bottom: none;
+    }
+
+    .other ion-col {
+        padding-left: 20px;
+    }
+}
+

@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "NSBM Time Table Viewer",
+  "short_name": "NSBM Time Table Viewer",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{

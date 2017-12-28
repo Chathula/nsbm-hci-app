@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Modules</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Courses</h2>
+
+  <ion-list>
+    
+    <ion-item *ngFor="let subject of subjects">          
+      <button ion-item no-lines class="item-btn" (click)="subjectSelected(subject)">{{ subject.name }}</button>     
+      <ion-icon item-end name="star" isActive="true" (click)="addToList(subject.id)" class="star" *ngIf="checkListed(subject.id)" ></ion-icon>
+      <ion-icon item-end name="star" isActive="true" (click)="addToList(subject.id)" class="normal" *ngIf="!checkListed(subject.id)" ></ion-icon>      
+    </ion-item>
+        
+  </ion-list>
+
+</ion-content>
