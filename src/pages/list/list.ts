@@ -17,12 +17,12 @@ export class ListPage {
 
   constructor(public navCtrl: NavController, subjectsService: SubjectsService, private storage: Storage, private toastCtrl: ToastController) {
     this.subjects = subjectsService.getSubjects();
-    
+
     this.storage.get('listed').then((val) => {
       if (val == null) {
         this.listedSubjects = [];
       } else {
-        this.listedSubjects = JSON.parse(val);        
+        this.listedSubjects = JSON.parse(val);
       }
     });
   }
@@ -35,10 +35,10 @@ export class ListPage {
     return false;
   }
 
-  removeItem(id) {    
-    this.storage.get('listed').then((val) => {      
+  removeItem(id) {
+    this.storage.get('listed').then((val) => {
       if (val != null) {
-        val = JSON.parse(val);        
+        val = JSON.parse(val);
         const i = val.indexOf(id);
         if(i != -1) {
           val.splice(i, 1);
@@ -53,7 +53,7 @@ export class ListPage {
         });
 
         tosted.present();
-      } 
+      }
     });
   }
 
@@ -63,8 +63,11 @@ export class ListPage {
         this.listedSubjects = [];
         refresher.complete();
       } else {
-        this.listedSubjects = JSON.parse(val);   
-        refresher.complete();     
+        setTimeout(function() {
+          this.listedSubjects = JSON.parse(val);
+          refresher.complete();
+        }, 2000);
+
       }
     });
   }

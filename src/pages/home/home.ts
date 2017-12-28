@@ -9,13 +9,13 @@ import { YearsPage } from '../years/years';
 export class HomePage {
 
   public items: any = [
-    'SCHOOL OF COMPUTING',
-    'SCHOOL OF BUSINESS',
-    'SCHOOL OF ENGINEERING'
+    'School of Computing',
+    'School of Business',
+    'School of Engineering'
   ];
 
   constructor(public navCtrl: NavController) {
-    
+
   }
 
   itemSelected(item) {

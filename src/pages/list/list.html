@@ -1,6 +1,6 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Listed Courses</ion-title>
+  <ion-navbar color="app-blue">
+    <ion-title color="light">Listed Courses</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -13,16 +13,16 @@
           refreshingText="Refreshing...">
         </ion-refresher-content>
     </ion-refresher>
-  
+
   <ion-list>
-    
+
     <span *ngFor="let subject of subjects">
-      <ion-item *ngIf="checkListed(subject.id)">          
-        <button ion-item no-lines class="item-btn" (click)="subjectSelected(subject)">{{ subject.name }}</button>     
-        <ion-icon item-end name="trash" isActive="true" (click)="removeItem(subject.id)"></ion-icon>      
+      <ion-item *ngIf="checkListed(subject.id)">
+        <button ion-item no-lines class="item-btn" (click)="subjectSelected(subject)">{{ subject.name }}</button>
+        <ion-icon item-end name="trash" isActive="true" (click)="removeItem(subject.id)"></ion-icon>
       </ion-item>
     </span>
-        
+
   </ion-list>
-  
+
 </ion-content>

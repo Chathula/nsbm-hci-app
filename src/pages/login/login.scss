@@ -10,8 +10,11 @@ page-login {
         margin-top: 100px;
     }
 
-    ion-input {
-        margin-bottom: 20px;
+    .logo {
+      width: auto;
+      margin: auto;
+      display: block;
+      background: transparent !important;
     }
 
     h4.course-category {
@@ -23,5 +26,15 @@ page-login {
         text-align: center;
         font-size: 18px;
     }
-}
 
+    .forgot-password {
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .login-input {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+    }
+}
